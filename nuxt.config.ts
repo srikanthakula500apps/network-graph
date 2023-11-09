@@ -1,3 +1,3 @@
 export default {
-  modules: ["nuxt-highcharts"],
+  modules: ["nuxt-highcharts", "vuetify-nuxt-module",],
 };
