@@ -1,605 +1,1735 @@
 {
-    "chart": {
-        "type": "networkgraph",
-        "marginTop": 20,
-        "height": "100%"
+  "chart": {
+    "type": "networkgraph",
+    "marginTop": 20,
+    "height": "100%"
+  },
+  "title": {
+    "text": "Network Graph",
+    "align": "center"
+  },
+  "subtitle": {
+    "text": "Plugin Data",
+    "align": "center"
+  },
+  "keys": ["from", "to"],
+  "enableSimulation": false,
+  "linkLength": 18,
+  "friction": -0.9,
+  "series": [
+    {
+      "marker": {
+        "radius": 4.5
       },
-      "title": {
-        "text": "Network Graph",
-        "align": "center"
+      "accessibility": {
+        "enabled": false
       },
-      "subtitle": {
-        "text": "Plugin Data",
-        "align": "center"
-      },
-      "keys": ["from", "to"],
-      "enableSimulation": false,
-      "linkLength": 25,
-      "friction": -0.9,
-      "series": [
-        {
-          "marker": {
-            "radius": 4.5
-          },
-          "accessibility": {
-            "enabled": false
-          },
-          "dataLabels": {
-            "enabled": true,
-            "linkFormat": "",
-            "style": {
-              "fontSize": "0.8em",
-              "fontWeight": "normal"
-            }
-          },
-          "id": "plugin-tree",
-          "data": [
-
-            ["frontend-plugins", "frontend-plugin-crud-basic"],
-            ["frontend-plugins", "frontend-plugin-form"],
-            ["frontend-plugins", "frontend-plugin-loaders"],
-            ["frontend-plugins", "frontend-plugin-file-upload"],
-            ["frontend-plugins", "frontend-plugin-cron"],
-            ["frontend-plugins", "frontend-plugin-email-templates"],
-            ["frontend-plugins", "frontend-plugin-onboarding"],
-            ["frontend-plugins", "frontend-plugin-import-csv"],
-            ["frontend-plugins", "frontend-plugin-notes"],
-            ["frontend-plugins", "frontend-plugin-show-alert"],
-            ["frontend-plugins", "frontend-plugin-video-recorder"],
-            ["frontend-plugins", "frontend-plugin-email-builder"],
-            ["frontend-plugins", "frontend-plugin-ai-prompt"],
-            ["frontend-plugins", "frontend-plugin-ellipsis"],
-            ["frontend-plugins", "frontend-plugin-modal"],
-            ["frontend-plugins", "frontend-plugin-themes"],
-            ["frontend-plugins", "frontend-plugin-dns"],
-            ["frontend-plugins", "frontend-plugin-confetti"],
-            ["frontend-plugins", "frontend-plugin-static-menu"],
-            ["frontend-plugins", "frontend-plugin-feedback"],
-            ["frontend-plugins", "frontend-plugin-roles"],
-            ["frontend-plugins", "frontend-plugin-email-component"],
-            ["frontend-plugins", "frontend-plugin-global-search"],
-            ["frontend-plugins", "frontend-plugin-quill"],
-            ["frontend-plugins", "frontend-plugin-maps"],
-            ["frontend-plugins", "frontend-plugin-charts"],
-            ["frontend-plugins", "frontend-plugin-hierarchy"],
-            ["frontend-plugins", "frontend-plugin-gravatar"],
-            ["frontend-plugins", "frontend-plugin-calendar"],
-            ["frontend-plugins", "frontend-plugin-qr-code"],
-            ["frontend-plugins", "frontend-plugin-gridster"],
-            ["frontend-plugins", "frontend-plugin-whatsapp-templates"],
-            ["frontend-plugins", "frontend-plugin-timer"],
-            ["frontend-plugins", "frontend-plugin-domain-services"],
-            ["frontend-plugins", "frontend-plugin-profile-picker"],
-            ["frontend-plugins", "frontend-plugin-add-import"],
-            ["frontend-plugins", "frontend-plugin-choose-template"],
-            ["frontend-plugins", "frontend-plugin-website-builder"],
-            ["frontend-plugins", "frontend-plugin-byos"],
-            ["frontend-plugins", "frontend-plugin-support-faq"],
-            ["frontend-plugins", "frontend-plugin-tags"],
-            ["frontend-plugins", "frontend-plugin-kanban"],
-            ["frontend-plugins", "frontend-plugin-activities"],
-            ["frontend-plugins", "frontend-plugin-composables"],
-            ["frontend-plugins", "frontend-plugin-carousel"],
-            ["frontend-plugins", "frontend-plugin-auth"],
-            ["frontend-plugins", "frontend-plugin-toaster"],
-            ["frontend-plugins", "frontend-plugin-bulk-email"],
-            ["frontend-plugins", "frontend-plugin-domain-preferences"],
-            ["frontend-plugins", "frontend-plugin-entity-header"],
-            ["frontend-plugins", "frontend-plugin-entity-inline"],
-            ["frontend-plugins", "frontend-plugin-media-preview"],
-            ["frontend-plugins", "frontend-plugin-sms-templates"],
-            ["frontend-plugins", "frontend-plugin-video-maker"],
-            ["frontend-plugins", "frontend-plugin-flows"],
-            ["frontend-plugins", "frontend-plugin-telephony"],
-            ["frontend-plugins", "frontend-plugin-entity-details"],
-            ["frontend-plugins", "frontend-plugin-task-summary"],
-            ["frontend-plugins", "frontend-plugin-tasks"],
-            ["frontend-plugins", "frontend-plugin-document-summary"],
-            ["frontend-plugin-crud-basic", "crud-basic-frontend-plugin-auth"],
-            ["frontend-plugin-crud-basic", "crud-basic-frontend-plugin-calendar"],
-            [
-              "frontend-plugin-crud-basic",
-              "crud-basic-frontend-plugin-choose-template"
-            ],
-            ["frontend-plugin-crud-basic", "crud-basic-frontend-plugin-composables"],
-            ["frontend-plugin-crud-basic", "crud-basic-frontend-plugin-form"],
-            ["frontend-plugin-crud-basic", "crud-basic-frontend-plugin-gravatar"],
-            ["frontend-plugin-crud-basic", "crud-basic-frontend-plugin-import-csv"],
-            ["frontend-plugin-crud-basic", "crud-basic-frontend-plugin-kanban-dev"],
-            ["frontend-plugin-crud-basic", "crud-basic-frontend-plugin-maps"],
-            ["frontend-plugin-crud-basic", "frontend-plugin-show-alert"],
-            ["frontend-plugin-crud-basic", "crud-basic-frontend-plugin-toaster"],
-            ["frontend-plugin-form", "form-frontend-plugin-ai-prompt"],
-            ["frontend-plugin-form", "form-frontend-plugin-auth"],
-            ["frontend-plugin-form", "form-frontend-plugin-composables"],
-            ["frontend-plugin-form", "form-frontend-plugin-file-upload"],
-            ["frontend-plugin-form", "form-frontend-plugin-gravatar"],
-            ["frontend-plugin-form", "form-frontend-plugin-loaders"],
-            ["frontend-plugin-form", "form-frontend-plugin-modal"],
-            ["frontend-plugin-form", "form-frontend-plugin-quill"],
-            ["frontend-plugin-form", "form-frontend-plugin-settings-schedule-calendar"],
-            ["frontend-plugin-form", "form-frontend-plugin-toaster"],
-            ["frontend-plugin-form", "form-frontend-plugin-video-recorder"],
-            ["frontend-plugin-loaders", "loaders-frontend-plugin-auth"],
-            ["frontend-plugin-file-upload", "file-upload-frontend-plugin-auth"],
-            ["frontend-plugin-file-upload", "file-upload-frontend-plugin-composables"],
-            ["frontend-plugin-file-upload", "file-upload-frontend-plugin-loaders"],
-            ["frontend-plugin-file-upload", "file-upload-frontend-plugin-modal"],
-            ["frontend-plugin-file-upload", "file-upload-frontend-plugin-toaster"],
-            ["frontend-plugin-cron", "cron-frontend-plugin-auth"],
-            ["frontend-plugin-cron", "cron-frontend-plugin-composables"],
-            ["frontend-plugin-cron", "cron-frontend-plugin-crud-basic"],
-            ["frontend-plugin-cron", "cron-frontend-plugin-form"],
-            [
-              "frontend-plugin-email-templates",
-              "email-templates-frontend-plugin-ai-prompt"
-            ],
-            ["frontend-plugin-email-templates", "email-templates-frontend-plugin-auth"],
-            [
-              "frontend-plugin-email-templates",
-              "email-templates-frontend-plugin-choose-template"
-            ],
-            [
-              "frontend-plugin-email-templates",
-              "email-templates-frontend-plugin-composables"
-            ],
-            [
-              "frontend-plugin-email-templates",
-              "email-templates-frontend-plugin-crud-basic"
-            ],
-            [
-              "frontend-plugin-email-templates",
-              "email-templates-frontend-plugin-email-builder"
-            ],
-            [
-              "frontend-plugin-email-templates",
-              "email-templates-frontend-plugin-modal"
-            ],
-            [
-              "frontend-plugin-email-templates",
-              "email-templates-frontend-plugin-quill"
-            ],
-            [
-              "frontend-plugin-email-templates",
-              "email-templates-frontend-plugin-show-alert"
-            ],
-            [
-              "frontend-plugin-email-templates",
-              "email-templates-frontend-plugin-toaster"
-            ],
-            ["frontend-plugin-onboarding", "onboarding-frontend-plugin-auth"],
-            ["frontend-plugin-onboarding", "onboarding-frontend-plugin-composables"],
-            [
-              "frontend-plugin-onboarding",
-              "onboarding-frontend-plugin-domain-services"
-            ],
-            ["frontend-plugin-onboarding", "onboarding-frontend-plugin-form"],
-            ["frontend-plugin-onboarding", "onboarding-frontend-plugin-gravatar"],
-            ["frontend-plugin-onboarding", "onboarding-frontend-plugin-modal"],
-            ["frontend-plugin-onboarding", "onboarding-frontend-plugin-toaster"],
-            ["frontend-plugin-import-csv", "import-csv-frontend-plugin-auth"],
-            ["frontend-plugin-import-csv", "import-csv-frontend-plugin-composables"],
-            ["frontend-plugin-import-csv", "import-csv-frontend-plugin-file-upload"],
-            ["frontend-plugin-import-csv", "import-csv-frontend-plugin-modal"],
-            ["frontend-plugin-import-csv", "import-csv-frontend-plugin-toaster"],
-            ["frontend-plugin-notes", "notes-frontend-plugin-composables"],
-            ["frontend-plugin-notes", "notes-frontend-plugin-crud-basic"],
-            ["frontend-plugin-notes", "notes-frontend-plugin-gravatar"],
-            ["frontend-plugin-notes", "notes-frontend-plugin-loaders"],
-            ["frontend-plugin-notes", "notes-frontend-plugin-quill"],
-            ["frontend-plugin-show-alert", "show-alert-frontend-plugin-modal"],
-            [
-              "frontend-plugin-video-recorder",
-              "video-recorder-frontend-plugin-composables"
-            ],
-            ["frontend-plugin-video-recorder", "video-recorder-frontend-plugin-modal"],
-            [
-              "frontend-plugin-video-recorder",
-              "video-recorder-frontend-plugin-show-alert"
-            ],
-            ["frontend-plugin-video-recorder", "video-recorder-frontend-plugin-timer"],
-            [
-              "frontend-plugin-video-recorder",
-              "video-recorder-frontend-plugin-toaster"
-            ],
-            ["frontend-plugin-email-builder", "email-builder-frontend-plugin-loaders"],
-            ["frontend-plugin-ai-prompt", "ai-prompt-frontend-plugin-composables"],
-            ["frontend-plugin-ai-prompt", "ai-prompt-frontend-plugin-loaders"],
-            ["frontend-plugin-ai-prompt", "ai-prompt-frontend-plugin-modal"],
-            ["frontend-plugin-ai-prompt", "ai-prompt-frontend-plugin-toaster"],
-            ["frontend-plugin-ellipsis", "ellipsis-frontend-plugin-composables"],
-            ["frontend-plugin-modal", "modal"],
-            ["frontend-plugin-themes", "themes-frontend-plugin-auth"],
-            ["frontend-plugin-themes", "themes-frontend-plugin-composables"],
-            ["frontend-plugin-themes", "themes-frontend-plugin-static-menu"],
-            ["frontend-plugin-themes", "themes-frontend-plugin-toaster"],
-            ["frontend-plugin-dns", "dns-frontend-plugin-auth"],
-            ["frontend-plugin-dns", "dns-frontend-plugin-composables"],
-            ["frontend-plugin-dns", "dns-frontend-plugin-modal"],
-            ["frontend-plugin-dns", "dns-frontend-plugin-toaster"],
-            ["frontend-plugin-confetti", "confetti"],
-            ["frontend-plugin-static-menu", "static-menu-frontend-plugin-auth"],
-            ["frontend-plugin-static-menu", "static-menu-frontend-plugin-composables"],
-            ["frontend-plugin-static-menu", "static-menu-frontend-plugin-contact-us"],
-            ["frontend-plugin-static-menu", "static-menu-frontend-plugin-crud-basic"],
-            [
-              "frontend-plugin-static-menu",
-              "static-menu-frontend-plugin-global-search-dev"
-            ],
-            ["frontend-plugin-static-menu", "static-menu-frontend-plugin-gravatar"],
-            ["frontend-plugin-static-menu", "static-menu-frontend-plugin-modal"],
-            ["frontend-plugin-static-menu", "static-menu-frontend-plugin-notification"],
-            ["frontend-plugin-static-menu", "static-menu-frontend-plugin-support-faq"],
-            ["frontend-plugin-feedback", "feedback-frontend-plugin-auth"],
-            ["frontend-plugin-feedback", "feedback-frontend-plugin-composables"],
-            ["frontend-plugin-feedback", "feedback-frontend-plugin-form"],
-            ["frontend-plugin-feedback", "feedback-frontend-plugin-form-dev"],
-            ["frontend-plugin-feedback", "feedback-frontend-plugin-modal"],
-            ["frontend-plugin-feedback", "feedback-frontend-plugin-toaster"],
-            ["frontend-plugin-roles", "roles-frontend-plugin-auth"],
-            ["frontend-plugin-roles", "roles-frontend-plugin-crud-basic"],
-            ["frontend-plugin-roles", "roles-frontend-plugin-show-alert"],
-            [
-              "frontend-plugin-email-component",
-              "email-component-frontend-plugin-ai-prompt"
-            ],
-            [
-              "frontend-plugin-email-component",
-              "email-component-frontend-plugin-composables"
-            ],
-            ["frontend-plugin-email-component", "email-component-frontend-plugin-cron"],
-            [
-              "frontend-plugin-email-component",
-              "email-component-frontend-plugin-file-upload"
-            ],
-            ["frontend-plugin-email-component", "email-component-frontend-plugin-form"],
-            [
-              "frontend-plugin-email-component",
-              "email-component-frontend-plugin-gravatar"
-            ],
-            [
-              "frontend-plugin-email-component",
-              "email-component-frontend-plugin-loaders"
-            ],
-            [
-              "frontend-plugin-email-component",
-              "email-component-frontend-plugin-media-dev"
-            ],
-            [
-              "frontend-plugin-email-component",
-              "email-component-frontend-plugin-modal"
-            ],
-            [
-              "frontend-plugin-email-component",
-              "email-component-frontend-plugin-quill-dev"
-            ],
-            [
-              "frontend-plugin-email-component",
-              "email-component-frontend-plugin-show-alert"
-            ],
-            [
-              "frontend-plugin-email-component",
-              "email-component-frontend-plugin-toaster"
-            ],
-            [
-              "frontend-plugin-global-search",
-              "global-search-frontend-plugin-composables"
-            ],
-            ["frontend-plugin-quill", "quill-frontend-plugin-composables"],
-            ["frontend-plugin-quill", "quill-frontend-plugin-file-upload"],
-            ["frontend-plugin-quill", "quill-frontend-plugin-media-preview"],
-            ["frontend-plugin-quill", "quill-frontend-plugin-toaster"],
-            ["frontend-plugin-maps", "maps-frontend-plugin-composables"],
-            ["frontend-plugin-charts", "charts-frontend-plugin-auth"],
-            ["frontend-plugin-charts", "charts-frontend-plugin-composables"],
-            ["frontend-plugin-charts", "charts-frontend-plugin-crud-basic"],
-            ["frontend-plugin-charts", "charts-frontend-plugin-form"],
-            ["frontend-plugin-hierarchy", "hierarchy-frontend-plugin-auth"],
-            ["frontend-plugin-hierarchy", "hierarchy-frontend-plugin-composables"],
-            ["frontend-plugin-hierarchy", "hierarchy-frontend-plugin-loaders"],
-            ["frontend-plugin-gravatar", "gravatar-frontend-plugin-composables"],
-            ["frontend-plugin-gravatar", "calendar-gravatar-frontend-plugin-auth"],
-            ["frontend-plugin-calendar", "calendar-frontend-plugin-auth"],
-            ["frontend-plugin-calendar", "calendar-frontend-plugin-composables"],
-            ["frontend-plugin-qr-code", "qr-code"],
-            ["frontend-plugin-gridster", "gridster-frontend-plugin-auth"],
-            [
-              "frontend-plugin-gridster",
-              "gridster-frontend-plugin-choose-template-dev"
-            ],
-            ["frontend-plugin-gridster", "gridster-frontend-plugin-modal"],
-            ["frontend-plugin-gridster", "gridster-frontend-plugin-show-alert"],
-            [
-              "frontend-plugin-whatsapp-templates",
-              "whatsapp-templates-frontend-plugin-auth"
-            ],
-            [
-              "frontend-plugin-whatsapp-templates",
-              "whatsapp-templates-frontend-plugin-composables"
-            ],
-            [
-              "frontend-plugin-whatsapp-templates",
-              "whatsapp-templates-frontend-plugin-crud-basic"
-            ],
-            [
-              "frontend-plugin-whatsapp-templates",
-              "whatsapp-templates-frontend-plugin-gravatar"
-            ],
-            [
-              "frontend-plugin-whatsapp-templates",
-              "whatsapp-templates-frontend-plugin-modal"
-            ],
-            [
-              "frontend-plugin-whatsapp-templates",
-              "whatsapp-templates-frontend-plugin-quill"
-            ],
-            [
-              "frontend-plugin-whatsapp-templates",
-              "whatsapp-templates-frontend-plugin-toaster"
-            ],
-            ["frontend-plugin-timer", "timer-frontend-plugin-composables"],
-            ["frontend-plugin-domain-services", "domain-services-frontend-plugin-auth"],
-            [
-              "frontend-plugin-domain-services",
-              "domain-services-frontend-plugin-auth-dev"
-            ],
-            [
-              "frontend-plugin-domain-services",
-              "domain-services-frontend-plugin-composables"
-            ],
-            [
-              "frontend-plugin-domain-services",
-              "domain-services-frontend-plugin-toaster"
-            ],
-            [
-              "frontend-plugin-profile-picker",
-              "profile-picker-frontend-plugin-composables"
-            ],
-            [
-              "frontend-plugin-profile-picker",
-              "profile-picker-frontend-plugin-file-upload"
-            ],
-            ["frontend-plugin-profile-picker", "profile-picker-frontend-plugin-modal"],
-            [
-              "frontend-plugin-profile-picker",
-              "profile-picker-frontend-plugin-toaster"
-            ],
-            [
-              "frontend-plugin-profile-picker",
-              "profile-picker-frontend-plugin-video-recorder"
-            ],
-            ["frontend-plugin-add-import", "add-import-frontend-plugin-import-csv"],
-            ["frontend-plugin-choose-template", "choose-template-frontend-plugin-form"],
-            [
-              "frontend-plugin-choose-template",
-              "choose-template-frontend-plugin-modal"
-            ],
-            ["frontend-plugin-website-builder", "website-builder-frontend-plugin-auth"],
-            [
-              "frontend-plugin-website-builder",
-              "website-builder-frontend-plugin-composables"
-            ],
-            [
-              "frontend-plugin-website-builder",
-              "website-builder-frontend-plugin-crud-basic"
-            ],
-            ["frontend-plugin-website-builder", "website-builder-frontend-plugin-dns"],
-            [
-              "frontend-plugin-website-builder",
-              "website-builder-frontend-plugin-file-upload"
-            ],
-            ["frontend-plugin-website-builder", "website-builder-frontend-plugin-form"],
-            [
-              "frontend-plugin-website-builder",
-              "website-builder-frontend-plugin-loaders"
-            ],
-            [
-              "frontend-plugin-website-builder",
-              "website-builder-frontend-plugin-modal"
-            ],
-            [
-              "frontend-plugin-website-builder",
-              "website-builder-frontend-plugin-toaster"
-            ],
-            ["frontend-plugin-byos", "byos-frontend-plugin-composables"],
-            ["frontend-plugin-byos", "byos-frontend-plugin-form"],
-            ["frontend-plugin-byos", "byos-frontend-plugin-loaders"],
-            ["frontend-plugin-byos", "byos-frontend-plugin-toaster"],
-            ["frontend-plugin-support-faq", "support-faq-frontend-plugin-modal"],
-            ["frontend-plugin-tags", "tags-frontend-plugin-modal"],
-            ["frontend-plugin-kanban", "kanban-frontend-plugin-auth"],
-            ["frontend-plugin-kanban", "kanban-frontend-plugin-composables"],
-            ["frontend-plugin-kanban", "kanban-frontend-plugin-loaders"],
-            ["frontend-plugin-kanban", "kanban-frontend-plugin-media-preview"],
-            ["frontend-plugin-activities", "activities-frontend-plugin-auth"],
-            ["frontend-plugin-activities", "activities-frontend-plugin-composables"],
-            ["frontend-plugin-activities", "activities-frontend-plugin-gravatar"],
-            ["frontend-plugin-composables", "composables-frontend-plugin-toaster"],
-            ["frontend-plugin-carousel", "carousel"],
-            ["frontend-plugin-auth", "auth-frontend-plugin-carousel"],
-            ["frontend-plugin-auth", "auth-frontend-plugin-composables"],
-            ["frontend-plugin-auth", "auth-frontend-plugin-confetti"],
-            ["frontend-plugin-auth", "auth-frontend-plugin-modal"],
-            ["frontend-plugin-auth", "auth-frontend-plugin-timer"],
-            ["frontend-plugin-auth", "auth-frontend-plugin-toaster"],
-            ["frontend-plugin-toaster", "toaster"],
-            ["frontend-plugin-bulk-email", "bulk-email-frontend-plugin-auth"],
-            ["frontend-plugin-bulk-email", "bulk-email-frontend-plugin-composables"],
-            ["frontend-plugin-bulk-email", "bulk-email-frontend-plugin-cron"],
-            ["frontend-plugin-bulk-email", "bulk-email-frontend-plugin-email-builder"],
-            ["frontend-plugin-bulk-email", "bulk-email-frontend-plugin-form"],
-            ["frontend-plugin-bulk-email", "bulk-email-frontend-plugin-loaders"],
-            ["frontend-plugin-bulk-email", "bulk-email-frontend-plugin-modal"],
-            ["frontend-plugin-bulk-email", "bulk-email-frontend-plugin-quill-dev"],
-            ["frontend-plugin-bulk-email", "bulk-email-frontend-plugin-toaster"],
-            [
-              "frontend-plugin-domain-preferences",
-              "domain-preferences-frontend-plugin-auth"
-            ],
-            [
-              "frontend-plugin-domain-preferences",
-              "domain-preferences-frontend-plugin-composables"
-            ],
-            [
-              "frontend-plugin-domain-preferences",
-              "domain-preferences-frontend-plugin-form"
-            ],
-            ["frontend-plugin-entity-header", "entity-header-frontend-plugin-auth"],
-            [
-              "frontend-plugin-entity-header",
-              "entity-header-frontend-plugin-composables"
-            ],
-            [
-              "frontend-plugin-entity-header",
-              "entity-header-frontend-plugin-crud-basic"
-            ],
-            [
-              "frontend-plugin-entity-header",
-              "entity-header-frontend-plugin-email-component"
-            ],
-            ["frontend-plugin-entity-header", "entity-header-frontend-plugin-form"],
-            ["frontend-plugin-entity-header", "entity-header-frontend-plugin-gravatar"],
-            ["frontend-plugin-entity-header", "entity-header-frontend-plugin-modal"],
-            [
-              "frontend-plugin-entity-header",
-              "entity-header-frontend-plugin-show-alert"
-            ],
-            [
-              "frontend-plugin-entity-header",
-              "entity-header-frontend-plugin-telephony-dev"
-            ],
-            ["frontend-plugin-entity-header", "entity-header-frontend-plugin-toaster"],
-            ["frontend-plugin-entity-inline", "entity-inline-frontend-plugin-auth"],
-            [
-              "frontend-plugin-entity-inline",
-              "entity-inline-frontend-plugin-composables"
-            ],
-            ["frontend-plugin-entity-inline", "entity-inline-frontend-plugin-form-dev"],
-            ["frontend-plugin-entity-inline", "entity-inline-frontend-plugin-toaster"],
-            ["frontend-plugin-entity-inline", "entity-inline-frontend-plugin-unfurl"],
-            ["frontend-plugin-media-preview", "media-preview-frontend-plugin-modal"],
-            ["frontend-plugin-sms-templates", "sms-templates-frontend-plugin-auth"],
-            [
-              "frontend-plugin-sms-templates",
-              "sms-templates-frontend-plugin-composables"
-            ],
-            [
-              "frontend-plugin-sms-templates",
-              "sms-templates-frontend-plugin-crud-basic"
-            ],
-            ["frontend-plugin-sms-templates", "sms-templates-frontend-plugin-gravatar"],
-            ["frontend-plugin-sms-templates", "sms-templates-frontend-plugin-modal"],
-            ["frontend-plugin-sms-templates", "sms-templates-frontend-plugin-toaster"],
-            ["frontend-plugin-video-maker", "video-maker-frontend-plugin-auth"],
-            ["frontend-plugin-video-maker", "video-maker-frontend-plugin-composables"],
-            ["frontend-plugin-video-maker", "video-maker-frontend-plugin-crud-basic"],
-            ["frontend-plugin-video-maker", "video-maker-frontend-plugin-form-dev"],
-            ["frontend-plugin-flows", "flows-frontend-plugin-auth"],
-            ["frontend-plugin-flows", "flows-frontend-plugin-choose-template-dev"],
-            ["frontend-plugin-flows", "flows-frontend-plugin-composables"],
-            ["frontend-plugin-flows", "flows-frontend-plugin-crud-basic"],
-            ["frontend-plugin-flows", "flows-frontend-plugin-form"],
-            ["frontend-plugin-flows", "flows-frontend-plugin-modal"],
-            ["frontend-plugin-flows", "flows-frontend-plugin-toaster"],
-            ["frontend-plugin-telephony", "telephony-frontend-plugin-auth"],
-            ["frontend-plugin-telephony", "telephony-frontend-plugin-composables"],
-            ["frontend-plugin-telephony", "telephony-frontend-plugin-crud-basic"],
-            ["frontend-plugin-telephony", "telephony-frontend-plugin-form"],
-            ["frontend-plugin-telephony", "telephony-frontend-plugin-loaders"],
-            ["frontend-plugin-telephony", "telephony-frontend-plugin-modal"],
-            [
-              "frontend-plugin-telephony",
-              "telephony-frontend-plugin-telephony-call-scripts-dev"
-            ],
-            ["frontend-plugin-telephony", "telephony-frontend-plugin-toaster"],
-            [
-              "frontend-plugin-entity-details",
-              "entity-details-frontend-plugin-activities-dev"
-            ],
-            ["frontend-plugin-entity-details", "entity-details-frontend-plugin-auth"],
-            [
-              "frontend-plugin-entity-details",
-              "entity-details-frontend-plugin-choose-template"
-            ],
-            [
-              "frontend-plugin-entity-details",
-              "entity-details-frontend-plugin-document-summary-dev"
-            ],
-            [
-              "frontend-plugin-entity-details",
-              "entity-details-frontend-plugin-entity-header-dev"
-            ],
-            [
-              "frontend-plugin-entity-details",
-              "entity-details-frontend-plugin-entity-inline"
-            ],
-            [
-              "frontend-plugin-entity-details",
-              "entity-details-frontend-plugin-gridster-dev"
-            ],
-            [
-              "frontend-plugin-entity-details",
-              "entity-details-frontend-plugin-notes-dev"
-            ],
-            [
-              "frontend-plugin-entity-details",
-              "entity-details-frontend-plugin-task-summary-dev"
-            ],
-            [
-              "frontend-plugin-entity-details",
-              "entity-details-frontend-plugin-tasks-dev"
-            ],
-            ["frontend-plugin-task-summary", "task-summary-frontend-plugin-auth"],
-            [
-              "frontend-plugin-task-summary",
-              "task-summary-frontend-plugin-composables"
-            ],
-            ["frontend-plugin-task-summary", "task-summary-frontend-plugin-crud-basic"],
-            [
-              "frontend-plugin-task-summary",
-              "task-summary-frontend-plugin-media-preview"
-            ],
-            ["frontend-plugin-tasks", "tasks-frontend-plugin-auth"],
-            ["frontend-plugin-tasks", "tasks-frontend-plugin-composables"],
-            ["frontend-plugin-tasks", "tasks-frontend-plugin-crud-basic"],
-            ["frontend-plugin-tasks", "tasks-frontend-plugin-file-upload"],
-            ["frontend-plugin-tasks", "tasks-frontend-plugin-form"],
-            ["frontend-plugin-tasks", "tasks-frontend-plugin-kanban-dev"],
-            ["frontend-plugin-tasks", "tasks-frontend-plugin-media-preview"],
-            ["frontend-plugin-tasks", "tasks-frontend-plugin-quill"],
-            [
-              "frontend-plugin-document-summary",
-              "document-summary-frontend-plugin-auth"
-            ],
-            [
-              "frontend-plugin-document-summary",
-              "document-summary-frontend-plugin-composables"
-            ],
-            [
-              "frontend-plugin-document-summary",
-              "document-summary-frontend-plugin-crud-basic"
-            ],
-            [
-              "frontend-plugin-document-summary",
-              "document-summary-frontend-plugin-email-component"
-            ],
-            [
-              "frontend-plugin-document-summary",
-              "document-summary-frontend-plugin-file-upload"
-            ],
-            [
-              "frontend-plugin-document-summary",
-              "document-summary-frontend-plugin-form-dev"
-            ],
-            [
-              "frontend-plugin-document-summary",
-              "document-summary-frontend-plugin-media-preview"
-            ],
-            [
-              "frontend-plugin-document-summary",
-              "document-summary-frontend-plugin-modal"
-            ]
-          ]
+      "dataLabels": {
+        "enabled": true,
+        "linkFormat": "",
+        "style": {
+          "fontSize": "0.8em",
+          "fontWeight": "normal"
         }
+      },
+      "id": "plugin-tree",
+      "nodes": [
+        {
+          "id": "frontend-plugins",
+          "marker": {
+            "radius": 10
+          },
+          "color": "#FF5733"
+        },
+        {
+          "id": "frontend-plugin-crud-basic",
+          "marker": {
+            "radius": 7
+          },
+          "color": "#8A2BE2"
+        },
+        { "id": "crud-basic-frontend-plugin-auth", "color": "#8A2BE2" },
+        { "id": "crud-basic-frontend-plugin-calendar", "color": "#8A2BE2" },
+        { "id": "crud-basic-frontend-plugin-choose-template", "color": "#8A2BE2" },
+        { "id": "crud-basic-frontend-plugin-composables", "color": "#8A2BE2" },
+        { "id": "crud-basic-frontend-plugin-form", "color": "#8A2BE2" },
+        { "id": "crud-basic-frontend-plugin-gravatar", "color": "#8A2BE2" },
+        { "id": "crud-basic-frontend-plugin-import-csv", "color": "#8A2BE2" },
+        { "id": "crud-basic-frontend-plugin-kanban-dev", "color": "#8A2BE2" },
+        { "id": "crud-basic-frontend-plugin-maps", "color": "#8A2BE2" },
+        { "id": "crud-basic-frontend-plugin-show-alert", "color": "#8A2BE2" },
+        { "id": "crud-basic-frontend-plugin-toaster", "color": "#8A2BE2" },
+        {
+          "id": "frontend-plugin-form",
+          "marker": {
+            "radius": 7
+          },
+          "color": "#FFD700"
+        },
+        { "id": "form-frontend-plugin-ai-prompt", "color": "#FFD700" },
+        { "id": "form-frontend-plugin-auth", "color": "#FFD700" },
+        { "id": "form-frontend-plugin-composables", "color": "#FFD700" },
+        { "id": "form-frontend-plugin-file-upload", "color": "#FFD700" },
+        { "id": "form-frontend-plugin-gravatar", "color": "#FFD700" },
+        { "id": "form-frontend-plugin-loaders", "color": "#FFD700" },
+        { "id": "form-frontend-plugin-modal", "color": "#FFD700" },
+        { "id": "form-frontend-plugin-quill", "color": "#FFD700" },
+        { "id": "form-frontend-plugin-settings-schedule-calendar", "color": "#FFD700" },
+        { "id": "form-frontend-plugin-toaster", "color": "#FFD700" },
+        { "id": "form-frontend-plugin-video-recorder", "color": "#FFD700" },
+        {
+          "id": "frontend-plugin-loaders",
+          "marker": {
+            "radius": 7
+          },
+          "color": "#32CD32"
+        },
+        { "id": "form-frontend-plugin-video-recorder", "color": "#32CD32" },
+        {
+          "id": "frontend-plugin-file-upload",
+          "marker": {
+            "radius": 7
+          },
+          "color": "#8A2BE2"
+        },
+        { "id": "file-upload-frontend-plugin-auth", "color": "#8A2BE2" },
+        { "id": "file-upload-frontend-plugin-composables", "color": "#8A2BE2" },
+        { "id": "file-upload-frontend-plugin-loaders", "color": "#8A2BE2" },
+        { "id": "file-upload-frontend-plugin-modal", "color": "#8A2BE2" },
+        { "id": "file-upload-frontend-plugin-toaster", "color": "#8A2BE2" },
+        {
+          "id": "frontend-plugin-cron",
+          "marker": {
+            "radius": 7
+          },
+          "color": "#A0522D"
+        },
+        { "id": "cron-frontend-plugin-auth", "color": "#A0522D" },
+        { "id": "cron-frontend-plugin-composables", "color": "#A0522D" },
+        { "id": "cron-frontend-plugin-crud-basic", "color": "#A0522D" },
+        { "id": "cron-frontend-plugin-form", "color": "#A0522D" },
+        {
+          "id": "frontend-plugin-email-templates",
+          "marker": {
+            "radius": 7
+          },
+          "color": "#FF69B4"
+        },
+        { "id": "email-templates-frontend-plugin-ai-prompt", "color": "#FF69B4" },
+        { "id": "email-templates-frontend-plugin-auth", "color": "#FF69B4" },
+        { "id": "email-templates-frontend-plugin-choose-template", "color": "#FF69B4" },
+        { "id": "email-templates-frontend-plugin-composables", "color": "#FF69B4" },
+        { "id": "email-templates-frontend-plugin-crud-basic", "color": "#FF69B4" },
+        { "id": "email-templates-frontend-plugin-email-builder", "color": "#FF69B4" },
+        { "id": "email-templates-frontend-plugin-modal", "color": "#FF69B4" },
+        { "id": "email-templates-frontend-plugin-quill", "color": "#FF69B4" },
+        { "id": "email-templates-frontend-plugin-show-alert", "color": "#FF69B4" },
+        { "id": "email-templates-frontend-plugin-toaster", "color": "#FF69B4" },
+        {
+          "id": "frontend-plugin-onboarding",
+          "marker": {
+            "radius": 7
+          },
+          "color": "#008B8B"
+        },
+        { "id": "onboarding-frontend-plugin-auth", "color": "#008B8B" },
+        { "id": "onboarding-frontend-plugin-composables", "color": "#008B8B" },
+        { "id": "onboarding-frontend-plugin-domain-services", "color": "#008B8B" },
+        { "id": "onboarding-frontend-plugin-form", "color": "#008B8B" },
+        { "id": "onboarding-frontend-plugin-gravatar", "color": "#008B8B" },
+        { "id": "onboarding-frontend-plugin-modal", "color": "#008B8B" },
+        { "id": "onboarding-frontend-plugin-toaster", "color": "#008B8B" },
+        {
+          "id": "frontend-plugin-import-csv",
+          "marker": {
+            "radius": 7
+          },
+          "color": "#8B008B"
+        },
+        { "id": "import-csv-frontend-plugin-auth", "color": "#8B008B" },
+        { "id": "import-csv-frontend-plugin-composables", "color": "#8B008B" },
+        { "id": "import-csv-frontend-plugin-file-upload", "color": "#8B008B" },
+        { "id": "import-csv-frontend-plugin-modal", "color": "#8B008B" },
+        { "id": "import-csv-frontend-plugin-toaster", "color": "#8B008B" },
+        {
+          "id": "frontend-plugin-notes",
+          "marker": {
+            "radius": 7
+          },
+          "color": "#1E90FF"
+        },
+        { "id": "notes-frontend-plugin-composables", "color": "#1E90FF" },
+        { "id": "notes-frontend-plugin-crud-basic", "color": "#1E90FF" },
+        { "id": "notes-frontend-plugin-gravatar", "color": "#1E90FF" },
+        { "id": "notes-frontend-plugin-loaders", "color": "#1E90FF" },
+        { "id": "notes-frontend-plugin-quill", "color": "#1E90FF" },
+        {
+          "id": "frontend-plugin-show-alert",
+          "marker": {
+            "radius": 7
+          },
+          "color":  "#2E8B57"
+        },
+        { "id": "show-alert-frontend-plugin-modal", "color":  "#2E8B57" },
+        {
+          "id": "frontend-plugin-video-recorder",
+          "marker": {
+            "radius": 7
+          },
+          "color":  "#00CED1"
+        },
+        { "id": "video-recorder-frontend-plugin-composables", "color":  "#00CED1" },
+        { "id": "video-recorder-frontend-plugin-modal", "color":  "#00CED1" },
+        { "id": "video-recorder-frontend-plugin-show-alert", "color":  "#00CED1" },
+        { "id": "video-recorder-frontend-plugin-timer", "color":  "#00CED1" },
+        { "id": "video-recorder-frontend-plugin-toaster", "color":  "#00CED1" },
+        {
+          "id": "frontend-plugin-email-builder",
+          "marker": {
+            "radius": 7
+          },
+          "color":  "#9400D3"
+        },
+        { "id": "email-builder-frontend-plugin-loaders", "color":  "#9400D3" },
+        {
+          "id": "frontend-plugin-ai-prompt",
+          "marker": {
+            "radius": 7
+          },
+          "color":  "#FF1493"
+        },
+        { "id": "ai-prompt-frontend-plugin-composables", "color":  "#FF1493" },
+        { "id": "ai-prompt-frontend-plugin-loaders", "color":  "#FF1493" },
+        { "id": "ai-prompt-frontend-plugin-modal", "color":  "#FF1493" },
+        { "id": "ai-prompt-frontend-plugin-toaster", "color":  "#FF1493" },
+        {
+          "id": "frontend-plugin-ellipsis",
+          "marker": {
+            "radius": 7
+          },
+          "color":  "#00BFFF"
+        },
+        { "id": "ellipsis-frontend-plugin-composables", "color":  "#00BFFF" },
+        {
+          "id": "frontend-plugin-modal",
+          "marker": {
+            "radius": 7
+          },
+          "color":  "#8B008B"
+        },
+        { "id": "modal", "color":  "#8B008B" },
+        {
+          "id": "frontend-plugin-themes",
+          "marker": {
+            "radius": 7
+          },
+          "color":  "#32CD32"
+        },
+        { "id": "themes-frontend-plugin-auth", "color":  "#32CD32" },
+        { "id": "themes-frontend-plugin-composables", "color":  "#32CD32" },
+        { "id": "themes-frontend-plugin-static-menu", "color":  "#32CD32" },
+        { "id": "themes-frontend-plugin-toaster", "color":  "#32CD32" },
+        {
+          "id": "frontend-plugin-dns",
+          "marker": {
+            "radius": 7
+          },
+          "color": "#B22222"
+        },
+        { "id": "dns-frontend-plugin-auth", "color": "#B22222" },
+        { "id": "dns-frontend-plugin-composables", "color": "#B22222" },
+        { "id": "dns-frontend-plugin-modal", "color": "#B22222" },
+        { "id": "dns-frontend-plugin-toaster", "color": "#B22222" },
+        {
+          "id": "frontend-plugin-confetti",
+          "marker": {
+            "radius": 7
+          },
+          "color": "#FF4500"
+        },
+        { "id": "confetti", "color": "#FF4500" },
+        {
+          "id": "frontend-plugin-static-menu",
+          "marker": {
+            "radius": 7
+          },
+          "color": "#2E8B57"
+        },
+        { "id": "static-menu-frontend-plugin-auth", "color": "#2E8B57" },
+        { "id": "static-menu-frontend-plugin-composables", "color": "#2E8B57" },
+        { "id": "static-menu-frontend-plugin-contact-us", "color": "#2E8B57" },
+        { "id": "static-menu-frontend-plugin-crud-basic", "color": "#2E8B57" },
+        { "id": "static-menu-frontend-plugin-global-search-dev", "color": "#2E8B57" },
+        { "id": "static-menu-frontend-plugin-gravatar", "color": "#2E8B57" },
+        { "id": "static-menu-frontend-plugin-modal", "color": "#2E8B57" },
+        { "id": "static-menu-frontend-plugin-notification", "color": "#2E8B57" },
+        { "id": "static-menu-frontend-plugin-support-faq", "color": "#2E8B57" },
+        {
+          "id": "frontend-plugin-feedback",
+          "marker": {
+            "radius": 7
+          },
+          "color": "#4682B4"
+        },
+        { "id": "feedback-frontend-plugin-auth", "color": "#4682B4" },
+        { "id": "feedback-frontend-plugin-composables", "color": "#4682B4" },
+        { "id": "feedback-frontend-plugin-form", "color": "#4682B4" },
+        { "id": "feedback-frontend-plugin-form-dev", "color": "#4682B4" },
+        { "id": "feedback-frontend-plugin-modal", "color": "#4682B4" },
+        { "id": "feedback-frontend-plugin-toaster", "color": "#4682B4" },
+        {
+          "id": "frontend-plugin-roles",
+          "marker": {
+            "radius": 7
+          },
+          "color":   "#8B4513"
+        },
+        { "id": "roles-frontend-plugin-auth", "color": "8B4513" },
+        { "id": "roles-frontend-plugin-crud-basic", "color": "8B4513" },
+        { "id": "roles-frontend-plugin-show-alert", "color": "8B4513" },
+        {
+    "id": "frontend-plugin-email-component",
+    "marker": {
+      "radius": 7
+    },
+    "color":   "#556B2F"
+  },
+  { "id": "email-component-frontend-plugin-ai-prompt", "color": "#556B2F" },
+  { "id": "email-component-frontend-plugin-composables", "color": "#556B2F" },
+  { "id": "email-component-frontend-plugin-cron", "color": "#556B2F" },
+  { "id": "email-component-frontend-plugin-file-upload", "color": "#556B2F" },
+  { "id": "email-component-frontend-plugin-form", "color": "#556B2F" },
+  { "id": "email-component-frontend-plugin-gravatar", "color": "#556B2F" },
+  { "id": "email-component-frontend-plugin-loaders", "color": "#556B2F" },
+  { "id": "email-component-frontend-plugin-media-dev", "color": "#556B2F" },
+  { "id": "email-component-frontend-plugin-modal", "color": "#556B2F" },
+  { "id": "email-component-frontend-plugin-quill-dev", "color": "#556B2F" },
+  { "id": "email-component-frontend-plugin-show-alert", "color": "#556B2F" },
+  { "id": "email-component-frontend-plugin-toaster", "color": "#556B2F" },
+
+
+{
+    "id": "frontend-plugin-global-search",
+    "marker": {
+      "radius": 7
+    },
+    "color":   "#9932CC"
+  },
+  { "id": "global-search-frontend-plugin-composables", "color": "#9932CC" },
+
+
+
+{
+    "id": "frontend-plugin-quill",
+    "marker": {
+      "radius": 7
+    },
+    "color":   "#8B0000"
+  },
+  { "id": "quill-frontend-plugin-composables", "color": "#8B0000" },
+  { "id": "quill-frontend-plugin-file-upload", "color": "#8B0000" },
+  { "id": "quill-frontend-plugin-media-preview", "color": "#8B0000" },
+  { "id": "quill-frontend-plugin-toaster", "color": "#8B0000" },
+
+
+{
+    "id": "frontend-plugin-global-search",
+    "marker": {
+      "radius": 7
+    },
+    "color":   "#800000"
+  },
+  { "id": "maps-frontend-plugin-composables", "color": "#800000" },
+
+
+{
+    "id": "frontend-plugin-charts",
+    "marker": {
+      "radius": 7
+    },
+    "color":   "#483D8B"
+  },
+  { "id": "charts-frontend-plugin-auth", "color": "#483D8B" },
+  { "id": "charts-frontend-plugin-composables", "color": "#483D8B" },
+  { "id": "charts-frontend-plugin-crud-basic", "color": "#483D8B" },
+  { "id": "charts-frontend-plugin-form", "color": "#483D8B" },
+
+
+
+{
+    "id": "frontend-plugin-hierarchy",
+    "marker": {
+      "radius": 7
+    },
+    "color":   "#8B008B"
+  },
+  { "id": "hierarchy-frontend-plugin-auth", "color": "#8B008B" },
+  { "id": "hierarchy-frontend-plugin-composables", "color": "#8B008B"},
+  { "id": "hierarchy-frontend-plugin-loaders", "color": "#8B008B" },
+
+
+{
+    "id": "frontend-plugin-gravatar",
+    "marker": {
+      "radius": 7
+    },
+    "color":   "#1E90FF"
+  },
+  { "id": "gravatar-frontend-plugin-composables", "color": "#1E90FF" },
+  { "id": "gravatar-frontend-plugin-auth", "color": "#1E90FF"},
+
+
+{
+    "id": "frontend-plugin-calendar",
+    "marker": {
+      "radius": 7
+    },
+    "color":   "#FF4500"
+  },
+  { "id": "calendar-frontend-plugin-auth", "color": "#FF4500" },
+  { "id": "calendar-frontend-plugin-composables", "color": "#FF4500"},
+
+
+{
+    "id": "frontend-plugin-qr-code",
+    "marker": {
+      "radius": 7
+    },
+    "color":   "#32CD32"
+  },
+  { "id": "qr-code", "color": "#FF4500", "color":   "#32CD32" },
+
+
+{
+    "id": "frontend-plugin-gridster",
+    "marker": {
+      "radius": 7
+    },
+    "color":   "#A0522D"
+  },
+  { "id": "gridster-frontend-plugin-auth", "color": "#A0522D" },
+  { "id": "gridster-frontend-plugin-choose-template-dev", "color": "#A0522D" },
+  { "id": "gridster-frontend-plugin-modal", "color": "#A0522D" },
+  { "id": "gridster-frontend-plugin-show-alert", "color": "#A0522D" },
+
+
+{
+    "id": "frontend-plugin-whatsapp-templates",
+    "marker": {
+      "radius": 7
+    },
+    "color":   "#8B4513"
+  },
+  { "id": "whatsapp-templates-frontend-plugin-auth", "color": "#8B4513" },
+  { "id": "whatsapp-templates-frontend-plugin-composables", "color": "#8B4513" },
+  { "id": "whatsapp-templates-frontend-plugin-crud-basic", "color": "#8B4513" },
+  { "id": "whatsapp-templates-frontend-plugin-gravatar", "color": "#8B4513" },
+  { "id": "whatsapp-templates-frontend-plugin-modal", "color": "#8B4513" },
+  { "id":  "whatsapp-templates-frontend-plugin-quill", "color": "#8B4513"},
+  { "id": "whatsapp-templates-frontend-plugin-toaster", "color": "#8B4513" },
+
+
+{
+    "id": "frontend-plugin-timer",
+    "marker": {
+      "radius": 7
+    },
+    "color":   "#7FFF00"
+  },
+  { "id": "timer-frontend-plugin-composables",  "color":  "#7FFF00" },
+
+
+{
+    "id": "frontend-plugin-domain-services",
+    "marker": {
+      "radius": 7
+    },
+    "color":   "#DC143C"
+  },
+  { "id": "domain-services-frontend-plugin-auth", "color": "#DC143C" },
+  { "id": "domain-services-frontend-plugin-auth-dev", "color": "#DC143C" },
+  { "id": "domain-services-frontend-plugin-composables", "color": "#DC143C" },
+  { "id": "domain-services-frontend-plugin-toaster", "color": "#DC143C" },
+
+
+{
+    "id": "frontend-plugin-domain-services",
+    "marker": {
+      "radius": 7
+    },
+    "color":   "#8A2BE2"
+  },
+  { "id": "profile-picker-frontend-plugin-composables", "color": "#8A2BE2" },
+  { "id": "profile-picker-frontend-plugin-file-upload", "color": "#8A2BE2" },
+  { "id": "profile-picker-frontend-plugin-modal", "color": "#8A2BE2" },
+  { "id": "profile-picker-frontend-plugin-toaster", "color": "#8A2BE2" },
+  { "id": "profile-picker-frontend-plugin-video-recorder", "color": "#8A2BE2" },
+
+
+{
+    "id": "frontend-plugin-add-import",
+    "marker": {
+      "radius": 7
+    },
+    "color":   "#FF8C00"
+  },
+  { "id": "add-import-frontend-plugin-import-csv", "color": "#FF8C00" },
+
+
+{
+    "id": "frontend-plugin-choose-template",
+    "marker": {
+      "radius": 7
+    },
+    "color":   "#00FF7F"
+  },
+  { "id": "choose-template-frontend-plugin-form", "color": "#00FF7F" },
+  { "id": "choose-template-frontend-plugin-modal", "color": "#00FF7F"},
+
+
+{
+    "id": "frontend-plugin-website-builder",
+    "marker": {
+      "radius": 7
+    },
+    "color":   "#8B008B"
+  },
+  { "id": "website-builder-frontend-plugin-auth", "color": "#8B008B" },
+  { "id": "website-builder-frontend-plugin-composables", "color": "#8B008B" },
+  { "id": "website-builder-frontend-plugin-crud-basic", "color": "#8B008B" },
+  { "id": "website-builder-frontend-plugin-dns", "color": "#8B008B" },
+  { "id": "website-builder-frontend-plugin-file-upload", "color": "#8B008B" },
+  { "id": "website-builder-frontend-plugin-form", "color": "#8B008B" },
+  { "id": "website-builder-frontend-plugin-loaders", "color": "#8B008B" },
+  { "id": "website-builder-frontend-plugin-modal", "color": "#8B008B" },
+  { "id": "website-builder-frontend-plugin-toaster", "color": "#8B008B" },
+
+
+{
+    "id": "frontend-plugin-byos",
+    "marker": {
+      "radius": 7
+    },
+    "color":   "#00008B"
+  },
+  { "id": "byos-frontend-plugin-composables", "color": "#00008B" },
+  { "id": "byos-frontend-plugin-form", "color": "#00008B" },
+  { "id": "byos-frontend-plugin-loaders", "color": "#00008B" },
+  { "id": "byos-frontend-plugin-toaster", "color": "#00008B" },
+
+
+{
+    "id": "frontend-plugin-support-faq",
+    "marker": {
+      "radius": 7
+    },
+    "color":   "#FF00FF"
+  },
+  { "id": "support-faq-frontend-plugin-modal", "color": "#FF00FF"},
+  {
+
+"id": "frontend-plugin-tags",
+
+"mass": 1,
+
+"marker": {
+
+"radius": 7
+
+},
+
+"color": "#9400D3"
+
+},
+
+{"id":"tags-frontend-plugin-modal", "color":"#9400D3"},
+
+{
+
+"id": "frontend-plugin-kanban",
+
+"mass": 1,
+
+"marker": {
+
+"radius": 7
+
+},
+
+"color": "#32CD32"
+
+},
+
+{"id":"kanban-frontend-plugin-auth", "color":"#32CD32"},
+
+{"id":"kanban-frontend-plugin-composables", "color":"#32CD32"},
+
+{"id":"kanban-frontend-plugin-loaders", "color":"#32CD32"},
+
+{"id":"kanban-frontend-plugin-media-preview", "color":"#32CD32"},
+
+{
+
+"id": "frontend-plugin-activities",
+
+"mass": 1,
+
+"marker": {
+
+"radius": 7
+
+},
+
+"color": "#00FF00"
+
+},
+
+{"id":"activities-frontend-plugin-auth", "color":"#00FF00"},
+
+{"id":"activities-frontend-plugin-composables", "color":"#00FF00"},
+
+{"id":"activities-frontend-plugin-gravatar", "color":"#00FF00"},
+
+{
+
+"id": "frontend-plugin-composables",
+
+"mass": 1,
+
+"marker": {
+
+"radius": 7
+
+},
+
+"color": "#FF00FF"
+
+},
+
+{"id":"composables-frontend-plugin-toaster", "color":"#FF00FF"},
+
+{
+
+"id": "frontend-plugin-carousel",
+
+"mass": 1,
+
+"marker": {
+
+"radius": 7
+
+},
+
+"color": "#1E90F0"
+
+},
+
+{"id":"carousel", "color":"#1E90F0"},
+
+{
+
+"id": "frontend-plugin-auth",
+
+"mass": 1,
+
+"marker": {
+
+"radius": 7
+
+},
+
+"color": "#1E90FF"
+
+},
+
+{"id":"auth-frontend-plugin-carousel", "color":"#1E90FF"},
+
+{"id":"auth-frontend-plugin-composables", "color":"#1E90FF"},
+
+{"id":"auth-frontend-plugin-confetti", "color":"#1E90FF"},
+
+{"id":"auth-frontend-plugin-modal", "color":"#1E90FF"},
+
+{"id":"auth-frontend-plugin-timer", "color":"#1E90FF"},
+
+{"id":"auth-frontend-plugin-toaster", "color":"#1E90FF"},
+
+{
+
+"id": "frontend-plugin-toaster",
+
+"mass": 1,
+
+"marker": {
+
+"radius": 7
+
+},
+
+"color": "#00BFFF"
+
+},
+
+{"id":"toaster", "color":"#00BFFF"},
+
+{
+
+"id": "frontend-plugin-bulk-email",
+
+"mass": 1,
+
+"marker": {
+
+"radius": 7
+
+},
+
+"color": "#2E8B57"
+
+},
+
+{"id":"bulk-email-frontend-plugin-auth", "color":"#2E8B57"},
+
+{"id":"bulk-email-frontend-plugin-composables", "color":"#2E8B57"},
+
+{"id":"bulk-email-frontend-plugin-cron", "color":"#2E8B57"},
+
+{"id":"bulk-email-frontend-plugin-email-builder", "color":"#2E8B57"},
+
+{"id":"bulk-email-frontend-plugin-form", "color":"#2E8B57"},
+
+{"id":"bulk-email-frontend-plugin-loaders", "color":"#2E8B57"},
+
+{"id":"bulk-email-frontend-plugin-modal", "color":"#2E8B57"},
+
+{"id":"bulk-email-frontend-plugin-quill-dev", "color":"#2E8B57"},
+
+{"id":"bulk-email-frontend-plugin-toaster", "color":"#2E8B57"},
+
+{
+
+"id": "frontend-plugin-domain-preferences",
+
+"mass": 1,
+
+"marker": {
+
+"radius": 7
+
+},
+
+"color": "#008000"
+
+},
+
+{"id":"domain-preferences-frontend-plugin-auth", "color":"#008000"},
+
+{"id":"domain-preferences-frontend-plugin-composables", "color":"#008000"},
+
+{"id":"domain-preferences-frontend-plugin-form", "color":"#008000"},
+
+{
+
+"id": "frontend-plugin-entity-header",
+
+"mass": 1,
+
+"marker": {
+
+"radius": 7
+
+},
+
+"color": "#8B4513"
+
+},
+
+{"id":"entity-header-frontend-plugin-auth", "color":"#8B4513"},
+
+{"id":"entity-header-frontend-plugin-composables", "color":"#8B4513"},
+
+{"id":"entity-header-frontend-plugin-crud-basic", "color":"#8B4513"},
+
+{"id":"entity-header-frontend-plugin-email-component", "color":"#8B4513"},
+
+{"id":"entity-header-frontend-plugin-form", "color":"#8B4513"},
+
+{"id":"entity-header-frontend-plugin-gravatar", "color":"#8B4513"},
+
+{"id":"entity-header-frontend-plugin-modal", "color":"#8B4513"},
+
+{"id":"entity-header-frontend-plugin-show-alert", "color":"#8B4513"},
+
+{"id":"entity-header-frontend-plugin-toaster", "color":"#8B4513"},
+
+{
+
+"id": "frontend-plugin-entity-inline",
+
+"mass": 1,
+
+"marker": {
+
+"radius": 7
+
+},
+
+"color": "#B22222"
+
+},
+
+{"id":"entity-inline-frontend-plugin-auth", "color":"#B22222"},
+
+{"id":"entity-inline-frontend-plugin-composables", "color":"#B22222"},
+
+{"id":"entity-inline-frontend-plugin-form-dev", "color":"#B22222"},
+
+{"id":"entity-inline-frontend-plugin-toaster", "color":"#B22222"},
+
+{"id":"entity-inline-frontend-plugin-unfurl", "color":"#B22222"},
+
+{
+
+"id": "frontend-plugin-media-preview",
+
+"mass": 1,
+
+"marker": {
+
+"radius": 7
+
+},
+
+"color": "#800000"
+
+},
+
+{"id":"media-preview-frontend-plugin-modal", "color":"#800000"},
+
+{
+
+"id": "frontend-plugin-sms-templates",
+
+"mass": 1,
+
+"marker": {
+
+"radius": 7
+
+},
+
+"color": "#8B008B"
+
+},
+
+{"id":"sms-templates-frontend-plugin-auth", "color":"#8B008B"},
+
+{"id":"sms-templates-frontend-plugin-composables", "color":"#8B008B"},
+
+{"id":"sms-templates-frontend-plugin-crud-basic", "color":"#8B008B"},
+
+{"id":"sms-templates-frontend-plugin-gravatar", "color":"#8B008B"},
+
+{"id":"sms-templates-frontend-plugin-modal", "color":"#8B008B"},
+
+{"id":"sms-templates-frontend-plugin-toaster", "color":"#8B008B"},
+
+{
+
+"id": "frontend-plugin-video-maker",
+
+"mass": 1,
+
+"marker": {
+
+"radius": 7
+
+},
+
+"color": "#9932CC"
+
+},
+
+{"id":"video-maker-frontend-plugin-auth", "color":"#9932CC"},
+
+{"id":"video-maker-frontend-plugin-composables", "color":"#9932CC"},
+
+{"id":"video-maker-frontend-plugin-crud-basic", "color":"#9932CC"},
+
+{"id":"video-maker-frontend-plugin-form-dev", "color":"#9932CC"},
+
+{
+
+"id": "frontend-plugin-flows",
+
+"mass": 1,
+
+"marker": {
+
+"radius": 7
+
+},
+
+"color": "#800080"
+
+},
+
+{"id":"flows-frontend-plugin-auth", "color":"#800080"},
+
+{"id":"flows-frontend-plugin-composables", "color":"#800080"},
+
+{"id":"flows-frontend-plugin-crud-basic", "color":"#800080"},
+
+{"id":"flows-frontend-plugin-toaster", "color":"#800080"},
+
+{"id":"flows-frontend-plugin-form", "color":"#800080"},
+
+{"id":"flows-frontend-plugin-modal", "color":"#800080"},
+
+{"id":"flows-frontend-plugin-choose-template-dev", "color":"#800080"},
+
+{
+
+"id": "frontend-plugin-telephony",
+
+"mass": 1,
+
+"marker": {
+
+"radius": 7
+
+},
+
+"color": "#8B4513"
+
+},
+
+{"id":"telephony-frontend-plugin-auth", "color":"#8B4513"},
+
+{"id":"telephony-frontend-plugin-composables", "color":"#8B4513"},
+
+{"id":"telephony-frontend-plugin-form", "color":"#8B4513"},
+
+{"id":"telephony-frontend-plugin-crud-basic", "color":"#8B4513"},
+
+{"id":"telephony-frontend-plugin-toaster", "color":"#8B4513"},
+
+{"id":"telephony-frontend-plugin-modal", "color":"#8B4513"},
+
+{"id":"telephony-frontend-plugin-telephony-call-scripts-dev", "color":"#8B4513"},
+
+{"id":"telephony-frontend-plugin-loaders", "color":"#8B4513"},
+
+{
+
+"id": "frontend-plugin-entity-details",
+
+"mass": 1,
+
+"marker": {
+
+"radius": 7
+
+},
+
+"color": "#556B2F"
+
+},
+
+{"id":"entity-details-frontend-plugin-auth", "color":"#556B2F"},
+
+{"id":"entity-details-frontend-plugin-activities-dev", "color":"#556B2F"},
+
+{"id":"entity-details-frontend-plugin-choose-template", "color":"#556B2F"},
+
+{"id":"entity-details-frontend-plugin-document-summary-dev", "color":"#556B2F"},
+
+{"id":"entity-details-frontend-plugin-entity-inline", "color":"#556B2F"},
+
+{"id":"entity-details-frontend-plugin-entity-header-dev", "color":"#556B2F"},
+
+{"id":"entity-details-frontend-plugin-gridster-dev", "color":"#556B2F"},
+
+{"id":"entity-details-frontend-plugin-notes-dev", "color":"#556B2F"},
+
+{"id":"entity-details-frontend-plugin-task-summary-dev", "color":"#556B2F"},
+
+{"id":"entity-details-frontend-plugin-tasks-dev", "color":"#556B2F"},
+
+{
+
+"id": "frontend-plugin-task-summary",
+
+"mass": 1,
+
+"marker": {
+
+"radius": 7
+
+},
+
+"color": "#4B0082"
+
+},
+
+{"id":"task-summary-frontend-plugin-auth", "color":"#4B0082"},
+
+{"id":"task-summary-frontend-plugin-composables", "color":"#4B0082"},
+
+{"id":"task-summary-frontend-plugin-crud-basic", "color":"#4B0082"},
+
+{"id":"task-summary-frontend-plugin-media-preview", "color":"#4B0082"},
+
+{
+
+"id": "frontend-plugin-tasks",
+
+"mass": 1,
+
+"marker": {
+
+"radius": 7
+
+},
+
+"color": "#A52A2A"
+
+},
+
+{"id":"tasks-frontend-plugin-auth", "color":"#A52A2A"},
+
+{"id":"tasks-frontend-plugin-composables", "color":"#A52A2A"},
+
+{"id":"tasks-frontend-plugin-crud-basic", "color":"#A52A2A"},
+
+{"id":"tasks-frontend-plugin-form", "color":"#A52A2A"},
+
+{"id":"tasks-frontend-plugin-file-upload", "color":"#A52A2A"},
+
+{"id":"tasks-frontend-plugin-kanban-dev", "color":"#A52A2A"},
+
+{"id":"tasks-frontend-plugin-media-preview", "color":"#A52A2A"},
+
+{"id":"tasks-frontend-plugin-quill", "color":"#A52A2A"},
+
+{
+
+"id": "frontend-plugin-document-summary",
+
+"mass": 1,
+
+"marker": {
+
+"radius": 7
+
+},
+
+"color": "#8B4513"
+
+},
+
+{"id":"document-summary-frontend-plugin-auth", "color":"#8B4513"},
+
+{"id":"document-summary-frontend-plugin-composables", "color":"#8B4513"},
+
+{"id":"document-summary-frontend-plugin-crud-basic", "color":"#8B4513"},
+
+{"id":"document-summary-frontend-plugin-email-component", "color":"#8B4513"},
+
+{"id":"document-summary-frontend-plugin-file-upload", "color":"#8B4513"},
+
+{"id":"document-summary-frontend-plugin-form-dev", "color":"#8B4513"},
+
+{"id":"document-summary-frontend-plugin-media-preview", "color":"#8B4513"},
+
+{"id":"document-summary-frontend-plugin-modal", "color":"#8B4513"}
+      ],
+      "data": [
+        ["frontend-plugins", "frontend-plugin-crud-basic"],
+        ["frontend-plugins", "frontend-plugin-form"],
+        ["frontend-plugins", "frontend-plugin-loaders"],
+        ["frontend-plugins", "frontend-plugin-file-upload"],
+        ["frontend-plugins", "frontend-plugin-cron"],
+        ["frontend-plugins", "frontend-plugin-email-templates"],
+        ["frontend-plugins", "frontend-plugin-onboarding"],
+        ["frontend-plugins", "frontend-plugin-import-csv"],
+        ["frontend-plugins", "frontend-plugin-notes"],
+        ["frontend-plugins", "frontend-plugin-show-alert"],
+        ["frontend-plugins", "frontend-plugin-video-recorder"],
+        ["frontend-plugins", "frontend-plugin-email-builder"],
+        ["frontend-plugins", "frontend-plugin-ai-prompt"],
+        ["frontend-plugins", "frontend-plugin-ellipsis"],
+        ["frontend-plugins", "frontend-plugin-modal"],
+        ["frontend-plugins", "frontend-plugin-themes"],
+        ["frontend-plugins", "frontend-plugin-dns"],
+        ["frontend-plugins", "frontend-plugin-confetti"],
+        ["frontend-plugins", "frontend-plugin-static-menu"],
+        ["frontend-plugins", "frontend-plugin-feedback"],
+        ["frontend-plugins", "frontend-plugin-roles"],
+        ["frontend-plugins", "frontend-plugin-email-component"],
+        ["frontend-plugins", "frontend-plugin-global-search"],
+        ["frontend-plugins", "frontend-plugin-quill"],
+        ["frontend-plugins", "frontend-plugin-maps"],
+        ["frontend-plugins", "frontend-plugin-charts"],
+        ["frontend-plugins", "frontend-plugin-hierarchy"],
+        ["frontend-plugins", "frontend-plugin-gravatar"],
+        ["frontend-plugins", "frontend-plugin-calendar"],
+        ["frontend-plugins", "frontend-plugin-qr-code"],
+        ["frontend-plugins", "frontend-plugin-gridster"],
+        ["frontend-plugins", "frontend-plugin-whatsapp-templates"],
+        ["frontend-plugins", "frontend-plugin-timer"],
+        ["frontend-plugins", "frontend-plugin-domain-services"],
+        ["frontend-plugins", "frontend-plugin-profile-picker"],
+        ["frontend-plugins", "frontend-plugin-add-import"],
+        ["frontend-plugins", "frontend-plugin-choose-template"],
+        ["frontend-plugins", "frontend-plugin-website-builder"],
+        ["frontend-plugins", "frontend-plugin-byos"],
+        ["frontend-plugins", "frontend-plugin-support-faq"],
+        ["frontend-plugins", "frontend-plugin-tags"],
+        ["frontend-plugins", "frontend-plugin-kanban"],
+        ["frontend-plugins", "frontend-plugin-activities"],
+        ["frontend-plugins", "frontend-plugin-composables"],
+        ["frontend-plugins", "frontend-plugin-carousel"],
+        ["frontend-plugins", "frontend-plugin-auth"],
+        ["frontend-plugins", "frontend-plugin-toaster"],
+        ["frontend-plugins", "frontend-plugin-bulk-email"],
+        ["frontend-plugins", "frontend-plugin-domain-preferences"],
+        ["frontend-plugins", "frontend-plugin-entity-header"],
+        ["frontend-plugins", "frontend-plugin-entity-inline"],
+        ["frontend-plugins", "frontend-plugin-media-preview"],
+        ["frontend-plugins", "frontend-plugin-sms-templates"],
+        ["frontend-plugins", "frontend-plugin-video-maker"],
+        ["frontend-plugins", "frontend-plugin-flows"],
+        ["frontend-plugins", "frontend-plugin-telephony"],
+        ["frontend-plugins", "frontend-plugin-entity-details"],
+        ["frontend-plugins", "frontend-plugin-task-summary"],
+        ["frontend-plugins", "frontend-plugin-tasks"],
+        ["frontend-plugins", "frontend-plugin-document-summary"],
+        ["frontend-plugin-crud-basic", "crud-basic-frontend-plugin-auth"],
+        ["frontend-plugin-crud-basic", "crud-basic-frontend-plugin-calendar"],
+        [
+          "frontend-plugin-crud-basic",
+          "crud-basic-frontend-plugin-choose-template"
+        ],
+        [
+          "frontend-plugin-crud-basic",
+          "crud-basic-frontend-plugin-composables"
+        ],
+        ["frontend-plugin-crud-basic", "crud-basic-frontend-plugin-form"],
+        ["frontend-plugin-crud-basic", "crud-basic-frontend-plugin-gravatar"],
+        ["frontend-plugin-crud-basic", "crud-basic-frontend-plugin-import-csv"],
+        ["frontend-plugin-crud-basic", "crud-basic-frontend-plugin-kanban-dev"],
+        ["frontend-plugin-crud-basic", "crud-basic-frontend-plugin-maps"],
+        ["frontend-plugin-crud-basic", "crud-basic-frontend-plugin-show-alert"],
+        ["frontend-plugin-crud-basic", "crud-basic-frontend-plugin-toaster"],
+        ["frontend-plugin-form", "form-frontend-plugin-ai-prompt"],
+        ["frontend-plugin-form", "form-frontend-plugin-auth"],
+        ["frontend-plugin-form", "form-frontend-plugin-composables"],
+        ["frontend-plugin-form", "form-frontend-plugin-file-upload"],
+        ["frontend-plugin-form", "form-frontend-plugin-gravatar"],
+        ["frontend-plugin-form", "form-frontend-plugin-loaders"],
+        ["frontend-plugin-form", "form-frontend-plugin-modal"],
+        ["frontend-plugin-form", "form-frontend-plugin-quill"],
+        [
+          "frontend-plugin-form",
+          "form-frontend-plugin-settings-schedule-calendar"
+        ],
+        ["frontend-plugin-form", "form-frontend-plugin-toaster"],
+        ["frontend-plugin-form", "form-frontend-plugin-video-recorder"],
+        ["frontend-plugin-loaders", "loaders-frontend-plugin-auth"],
+        ["frontend-plugin-file-upload", "file-upload-frontend-plugin-auth"],
+        [
+          "frontend-plugin-file-upload",
+          "file-upload-frontend-plugin-composables"
+        ],
+        ["frontend-plugin-file-upload", "file-upload-frontend-plugin-loaders"],
+        ["frontend-plugin-file-upload", "file-upload-frontend-plugin-modal"],
+        ["frontend-plugin-file-upload", "file-upload-frontend-plugin-toaster"],
+        ["frontend-plugin-cron", "cron-frontend-plugin-auth"],
+        ["frontend-plugin-cron", "cron-frontend-plugin-composables"],
+        ["frontend-plugin-cron", "cron-frontend-plugin-crud-basic"],
+        ["frontend-plugin-cron", "cron-frontend-plugin-form"],
+        [
+          "frontend-plugin-email-templates",
+          "email-templates-frontend-plugin-ai-prompt"
+        ],
+        [
+          "frontend-plugin-email-templates",
+          "email-templates-frontend-plugin-auth"
+        ],
+        [
+          "frontend-plugin-email-templates",
+          "email-templates-frontend-plugin-choose-template"
+        ],
+        [
+          "frontend-plugin-email-templates",
+          "email-templates-frontend-plugin-composables"
+        ],
+        [
+          "frontend-plugin-email-templates",
+          "email-templates-frontend-plugin-crud-basic"
+        ],
+        [
+          "frontend-plugin-email-templates",
+          "email-templates-frontend-plugin-email-builder"
+        ],
+        [
+          "frontend-plugin-email-templates",
+          "email-templates-frontend-plugin-modal"
+        ],
+        [
+          "frontend-plugin-email-templates",
+          "email-templates-frontend-plugin-quill"
+        ],
+        [
+          "frontend-plugin-email-templates",
+          "email-templates-frontend-plugin-show-alert"
+        ],
+        [
+          "frontend-plugin-email-templates",
+          "email-templates-frontend-plugin-toaster"
+        ],
+        ["frontend-plugin-onboarding", "onboarding-frontend-plugin-auth"],
+        [
+          "frontend-plugin-onboarding",
+          "onboarding-frontend-plugin-composables"
+        ],
+        [
+          "frontend-plugin-onboarding",
+          "onboarding-frontend-plugin-domain-services"
+        ],
+        ["frontend-plugin-onboarding", "onboarding-frontend-plugin-form"],
+        ["frontend-plugin-onboarding", "onboarding-frontend-plugin-gravatar"],
+        ["frontend-plugin-onboarding", "onboarding-frontend-plugin-modal"],
+        ["frontend-plugin-onboarding", "onboarding-frontend-plugin-toaster"],
+        ["frontend-plugin-import-csv", "import-csv-frontend-plugin-auth"],
+        [
+          "frontend-plugin-import-csv",
+          "import-csv-frontend-plugin-composables"
+        ],
+        [
+          "frontend-plugin-import-csv",
+          "import-csv-frontend-plugin-file-upload"
+        ],
+        ["frontend-plugin-import-csv", "import-csv-frontend-plugin-modal"],
+        ["frontend-plugin-import-csv", "import-csv-frontend-plugin-toaster"],
+        ["frontend-plugin-notes", "notes-frontend-plugin-composables"],
+        ["frontend-plugin-notes", "notes-frontend-plugin-crud-basic"],
+        ["frontend-plugin-notes", "notes-frontend-plugin-gravatar"],
+        ["frontend-plugin-notes", "notes-frontend-plugin-loaders"],
+        ["frontend-plugin-notes", "notes-frontend-plugin-quill"],
+        ["frontend-plugin-show-alert", "show-alert-frontend-plugin-modal"],
+        [
+          "frontend-plugin-video-recorder",
+          "video-recorder-frontend-plugin-composables"
+        ],
+        [
+          "frontend-plugin-video-recorder",
+          "video-recorder-frontend-plugin-modal"
+        ],
+        [
+          "frontend-plugin-video-recorder",
+          "video-recorder-frontend-plugin-show-alert"
+        ],
+        [
+          "frontend-plugin-video-recorder",
+          "video-recorder-frontend-plugin-timer"
+        ],
+        [
+          "frontend-plugin-video-recorder",
+          "video-recorder-frontend-plugin-toaster"
+        ],
+        [
+          "frontend-plugin-email-builder",
+          "email-builder-frontend-plugin-loaders"
+        ],
+        ["frontend-plugin-ai-prompt", "ai-prompt-frontend-plugin-composables"],
+        ["frontend-plugin-ai-prompt", "ai-prompt-frontend-plugin-loaders"],
+        ["frontend-plugin-ai-prompt", "ai-prompt-frontend-plugin-modal"],
+        ["frontend-plugin-ai-prompt", "ai-prompt-frontend-plugin-toaster"],
+        ["frontend-plugin-ellipsis", "ellipsis-frontend-plugin-composables"],
+        ["frontend-plugin-modal", "modal"],
+        ["frontend-plugin-themes", "themes-frontend-plugin-auth"],
+        ["frontend-plugin-themes", "themes-frontend-plugin-composables"],
+        ["frontend-plugin-themes", "themes-frontend-plugin-static-menu"],
+        ["frontend-plugin-themes", "themes-frontend-plugin-toaster"],
+        ["frontend-plugin-dns", "dns-frontend-plugin-auth"],
+        ["frontend-plugin-dns", "dns-frontend-plugin-composables"],
+        ["frontend-plugin-dns", "dns-frontend-plugin-modal"],
+        ["frontend-plugin-dns", "dns-frontend-plugin-toaster"],
+        ["frontend-plugin-confetti", "confetti"],
+        ["frontend-plugin-static-menu", "static-menu-frontend-plugin-auth"],
+        [
+          "frontend-plugin-static-menu",
+          "static-menu-frontend-plugin-composables"
+        ],
+        [
+          "frontend-plugin-static-menu",
+          "static-menu-frontend-plugin-contact-us"
+        ],
+        [
+          "frontend-plugin-static-menu",
+          "static-menu-frontend-plugin-crud-basic"
+        ],
+        [
+          "frontend-plugin-static-menu",
+          "static-menu-frontend-plugin-global-search-dev"
+        ],
+        ["frontend-plugin-static-menu", "static-menu-frontend-plugin-gravatar"],
+        ["frontend-plugin-static-menu", "static-menu-frontend-plugin-modal"],
+        [
+          "frontend-plugin-static-menu",
+          "static-menu-frontend-plugin-notification"
+        ],
+        [
+          "frontend-plugin-static-menu",
+          "static-menu-frontend-plugin-support-faq"
+        ],
+        ["frontend-plugin-feedback", "feedback-frontend-plugin-auth"],
+        ["frontend-plugin-feedback", "feedback-frontend-plugin-composables"],
+        ["frontend-plugin-feedback", "feedback-frontend-plugin-form"],
+        ["frontend-plugin-feedback", "feedback-frontend-plugin-form-dev"],
+        ["frontend-plugin-feedback", "feedback-frontend-plugin-modal"],
+        ["frontend-plugin-feedback", "feedback-frontend-plugin-toaster"],
+        ["frontend-plugin-roles", "roles-frontend-plugin-auth"],
+        ["frontend-plugin-roles", "roles-frontend-plugin-crud-basic"],
+        ["frontend-plugin-roles", "roles-frontend-plugin-show-alert"],
+        [
+          "frontend-plugin-email-component",
+          "email-component-frontend-plugin-ai-prompt"
+        ],
+        [
+          "frontend-plugin-email-component",
+          "email-component-frontend-plugin-composables"
+        ],
+        [
+          "frontend-plugin-email-component",
+          "email-component-frontend-plugin-cron"
+        ],
+        [
+          "frontend-plugin-email-component",
+          "email-component-frontend-plugin-file-upload"
+        ],
+        [
+          "frontend-plugin-email-component",
+          "email-component-frontend-plugin-form"
+        ],
+        [
+          "frontend-plugin-email-component",
+          "email-component-frontend-plugin-gravatar"
+        ],
+        [
+          "frontend-plugin-email-component",
+          "email-component-frontend-plugin-loaders"
+        ],
+        [
+          "frontend-plugin-email-component",
+          "email-component-frontend-plugin-media-dev"
+        ],
+        [
+          "frontend-plugin-email-component",
+          "email-component-frontend-plugin-modal"
+        ],
+        [
+          "frontend-plugin-email-component",
+          "email-component-frontend-plugin-quill-dev"
+        ],
+        [
+          "frontend-plugin-email-component",
+          "email-component-frontend-plugin-show-alert"
+        ],
+        [
+          "frontend-plugin-email-component",
+          "email-component-frontend-plugin-toaster"
+        ],
+        [
+          "frontend-plugin-global-search",
+          "global-search-frontend-plugin-composables"
+        ],
+        ["frontend-plugin-quill", "quill-frontend-plugin-composables"],
+        ["frontend-plugin-quill", "quill-frontend-plugin-file-upload"],
+        ["frontend-plugin-quill", "quill-frontend-plugin-media-preview"],
+        ["frontend-plugin-quill", "quill-frontend-plugin-toaster"],
+        ["frontend-plugin-maps", "maps-frontend-plugin-composables"],
+        ["frontend-plugin-charts", "charts-frontend-plugin-auth"],
+        ["frontend-plugin-charts", "charts-frontend-plugin-composables"],
+        ["frontend-plugin-charts", "charts-frontend-plugin-crud-basic"],
+        ["frontend-plugin-charts", "charts-frontend-plugin-form"],
+        ["frontend-plugin-hierarchy", "hierarchy-frontend-plugin-auth"],
+        ["frontend-plugin-hierarchy", "hierarchy-frontend-plugin-composables"],
+        ["frontend-plugin-hierarchy", "hierarchy-frontend-plugin-loaders"],
+        ["frontend-plugin-gravatar", "gravatar-frontend-plugin-composables"],
+        ["frontend-plugin-gravatar", "gravatar-frontend-plugin-auth"],
+        ["frontend-plugin-calendar", "calendar-frontend-plugin-auth"],
+        ["frontend-plugin-calendar", "calendar-frontend-plugin-composables"],
+        ["frontend-plugin-qr-code", "qr-code"],
+        ["frontend-plugin-gridster", "gridster-frontend-plugin-auth"],
+        [
+          "frontend-plugin-gridster",
+          "gridster-frontend-plugin-choose-template-dev"
+        ],
+        ["frontend-plugin-gridster", "gridster-frontend-plugin-modal"],
+        ["frontend-plugin-gridster", "gridster-frontend-plugin-show-alert"],
+        [
+          "frontend-plugin-whatsapp-templates",
+          "whatsapp-templates-frontend-plugin-auth"
+        ],
+        [
+          "frontend-plugin-whatsapp-templates",
+          "whatsapp-templates-frontend-plugin-composables"
+        ],
+        [
+          "frontend-plugin-whatsapp-templates",
+          "whatsapp-templates-frontend-plugin-crud-basic"
+        ],
+        [
+          "frontend-plugin-whatsapp-templates",
+          "whatsapp-templates-frontend-plugin-gravatar"
+        ],
+        [
+          "frontend-plugin-whatsapp-templates",
+          "whatsapp-templates-frontend-plugin-modal"
+        ],
+        [
+          "frontend-plugin-whatsapp-templates",
+          "whatsapp-templates-frontend-plugin-quill"
+        ],
+        [
+          "frontend-plugin-whatsapp-templates",
+          "whatsapp-templates-frontend-plugin-toaster"
+        ],
+        ["frontend-plugin-timer", "timer-frontend-plugin-composables"],
+        [
+          "frontend-plugin-domain-services",
+          "domain-services-frontend-plugin-auth"
+        ],
+        [
+          "frontend-plugin-domain-services",
+          "domain-services-frontend-plugin-auth-dev"
+        ],
+        [
+          "frontend-plugin-domain-services",
+          "domain-services-frontend-plugin-composables"
+        ],
+        [
+          "frontend-plugin-domain-services",
+          "domain-services-frontend-plugin-toaster"
+        ],
+        [
+          "frontend-plugin-profile-picker",
+          "profile-picker-frontend-plugin-composables"
+        ],
+        [
+          "frontend-plugin-profile-picker",
+          "profile-picker-frontend-plugin-file-upload"
+        ],
+        [
+          "frontend-plugin-profile-picker",
+          "profile-picker-frontend-plugin-modal"
+        ],
+        [
+          "frontend-plugin-profile-picker",
+          "profile-picker-frontend-plugin-toaster"
+        ],
+        [
+          "frontend-plugin-profile-picker",
+          "profile-picker-frontend-plugin-video-recorder"
+        ],
+        ["frontend-plugin-add-import", "add-import-frontend-plugin-import-csv"],
+        [
+          "frontend-plugin-choose-template",
+          "choose-template-frontend-plugin-form"
+        ],
+        [
+          "frontend-plugin-choose-template",
+          "choose-template-frontend-plugin-modal"
+        ],
+        [
+          "frontend-plugin-website-builder",
+          "website-builder-frontend-plugin-auth"
+        ],
+        [
+          "frontend-plugin-website-builder",
+          "website-builder-frontend-plugin-composables"
+        ],
+        [
+          "frontend-plugin-website-builder",
+          "website-builder-frontend-plugin-crud-basic"
+        ],
+        [
+          "frontend-plugin-website-builder",
+          "website-builder-frontend-plugin-dns"
+        ],
+        [
+          "frontend-plugin-website-builder",
+          "website-builder-frontend-plugin-file-upload"
+        ],
+        [
+          "frontend-plugin-website-builder",
+          "website-builder-frontend-plugin-form"
+        ],
+        [
+          "frontend-plugin-website-builder",
+          "website-builder-frontend-plugin-loaders"
+        ],
+        [
+          "frontend-plugin-website-builder",
+          "website-builder-frontend-plugin-modal"
+        ],
+        [
+          "frontend-plugin-website-builder",
+          "website-builder-frontend-plugin-toaster"
+        ],
+        ["frontend-plugin-byos", "byos-frontend-plugin-composables"],
+        ["frontend-plugin-byos", "byos-frontend-plugin-form"],
+        ["frontend-plugin-byos", "byos-frontend-plugin-loaders"],
+        ["frontend-plugin-byos", "byos-frontend-plugin-toaster"],
+        ["frontend-plugin-support-faq", "support-faq-frontend-plugin-modal"],
+        ["frontend-plugin-tags", "tags-frontend-plugin-modal"],
+        ["frontend-plugin-kanban", "kanban-frontend-plugin-auth"],
+        ["frontend-plugin-kanban", "kanban-frontend-plugin-composables"],
+        ["frontend-plugin-kanban", "kanban-frontend-plugin-loaders"],
+        ["frontend-plugin-kanban", "kanban-frontend-plugin-media-preview"],
+        ["frontend-plugin-activities", "activities-frontend-plugin-auth"],
+        [
+          "frontend-plugin-activities",
+          "activities-frontend-plugin-composables"
+        ],
+        ["frontend-plugin-activities", "activities-frontend-plugin-gravatar"],
+        ["frontend-plugin-composables", "composables-frontend-plugin-toaster"],
+        ["frontend-plugin-carousel", "carousel"],
+        ["frontend-plugin-auth", "auth-frontend-plugin-carousel"],
+        ["frontend-plugin-auth", "auth-frontend-plugin-composables"],
+        ["frontend-plugin-auth", "auth-frontend-plugin-confetti"],
+        ["frontend-plugin-auth", "auth-frontend-plugin-modal"],
+        ["frontend-plugin-auth", "auth-frontend-plugin-timer"],
+        ["frontend-plugin-auth", "auth-frontend-plugin-toaster"],
+        ["frontend-plugin-toaster", "toaster"],
+        ["frontend-plugin-bulk-email", "bulk-email-frontend-plugin-auth"],
+        [
+          "frontend-plugin-bulk-email",
+          "bulk-email-frontend-plugin-composables"
+        ],
+        ["frontend-plugin-bulk-email", "bulk-email-frontend-plugin-cron"],
+        [
+          "frontend-plugin-bulk-email",
+          "bulk-email-frontend-plugin-email-builder"
+        ],
+        ["frontend-plugin-bulk-email", "bulk-email-frontend-plugin-form"],
+        ["frontend-plugin-bulk-email", "bulk-email-frontend-plugin-loaders"],
+        ["frontend-plugin-bulk-email", "bulk-email-frontend-plugin-modal"],
+        ["frontend-plugin-bulk-email", "bulk-email-frontend-plugin-quill-dev"],
+        ["frontend-plugin-bulk-email", "bulk-email-frontend-plugin-toaster"],
+        [
+          "frontend-plugin-domain-preferences",
+          "domain-preferences-frontend-plugin-auth"
+        ],
+        [
+          "frontend-plugin-domain-preferences",
+          "domain-preferences-frontend-plugin-composables"
+        ],
+        [
+          "frontend-plugin-domain-preferences",
+          "domain-preferences-frontend-plugin-form"
+        ],
+        ["frontend-plugin-entity-header", "entity-header-frontend-plugin-auth"],
+        [
+          "frontend-plugin-entity-header",
+          "entity-header-frontend-plugin-composables"
+        ],
+        [
+          "frontend-plugin-entity-header",
+          "entity-header-frontend-plugin-crud-basic"
+        ],
+        [
+          "frontend-plugin-entity-header",
+          "entity-header-frontend-plugin-email-component"
+        ],
+        ["frontend-plugin-entity-header", "entity-header-frontend-plugin-form"],
+        [
+          "frontend-plugin-entity-header",
+          "entity-header-frontend-plugin-gravatar"
+        ],
+        [
+          "frontend-plugin-entity-header",
+          "entity-header-frontend-plugin-modal"
+        ],
+        [
+          "frontend-plugin-entity-header",
+          "entity-header-frontend-plugin-show-alert"
+        ],
+        [
+          "frontend-plugin-entity-header",
+          "entity-header-frontend-plugin-telephony-dev"
+        ],
+        [
+          "frontend-plugin-entity-header",
+          "entity-header-frontend-plugin-toaster"
+        ],
+        ["frontend-plugin-entity-inline", "entity-inline-frontend-plugin-auth"],
+        [
+          "frontend-plugin-entity-inline",
+          "entity-inline-frontend-plugin-composables"
+        ],
+        [
+          "frontend-plugin-entity-inline",
+          "entity-inline-frontend-plugin-form-dev"
+        ],
+        [
+          "frontend-plugin-entity-inline",
+          "entity-inline-frontend-plugin-toaster"
+        ],
+        [
+          "frontend-plugin-entity-inline",
+          "entity-inline-frontend-plugin-unfurl"
+        ],
+        [
+          "frontend-plugin-media-preview",
+          "media-preview-frontend-plugin-modal"
+        ],
+        ["frontend-plugin-sms-templates", "sms-templates-frontend-plugin-auth"],
+        [
+          "frontend-plugin-sms-templates",
+          "sms-templates-frontend-plugin-composables"
+        ],
+        [
+          "frontend-plugin-sms-templates",
+          "sms-templates-frontend-plugin-crud-basic"
+        ],
+        [
+          "frontend-plugin-sms-templates",
+          "sms-templates-frontend-plugin-gravatar"
+        ],
+        [
+          "frontend-plugin-sms-templates",
+          "sms-templates-frontend-plugin-modal"
+        ],
+        [
+          "frontend-plugin-sms-templates",
+          "sms-templates-frontend-plugin-toaster"
+        ],
+        ["frontend-plugin-video-maker", "video-maker-frontend-plugin-auth"],
+        [
+          "frontend-plugin-video-maker",
+          "video-maker-frontend-plugin-composables"
+        ],
+        [
+          "frontend-plugin-video-maker",
+          "video-maker-frontend-plugin-crud-basic"
+        ],
+        ["frontend-plugin-video-maker", "video-maker-frontend-plugin-form-dev"],
+        ["frontend-plugin-flows", "flows-frontend-plugin-auth"],
+        ["frontend-plugin-flows", "flows-frontend-plugin-choose-template-dev"],
+        ["frontend-plugin-flows", "flows-frontend-plugin-composables"],
+        ["frontend-plugin-flows", "flows-frontend-plugin-crud-basic"],
+        ["frontend-plugin-flows", "flows-frontend-plugin-form"],
+        ["frontend-plugin-flows", "flows-frontend-plugin-modal"],
+        ["frontend-plugin-flows", "flows-frontend-plugin-toaster"],
+        ["frontend-plugin-telephony", "telephony-frontend-plugin-auth"],
+        ["frontend-plugin-telephony", "telephony-frontend-plugin-composables"],
+        ["frontend-plugin-telephony", "telephony-frontend-plugin-crud-basic"],
+        ["frontend-plugin-telephony", "telephony-frontend-plugin-form"],
+        ["frontend-plugin-telephony", "telephony-frontend-plugin-loaders"],
+        ["frontend-plugin-telephony", "telephony-frontend-plugin-modal"],
+        [
+          "frontend-plugin-telephony",
+          "telephony-frontend-plugin-telephony-call-scripts-dev"
+        ],
+        ["frontend-plugin-telephony", "telephony-frontend-plugin-toaster"],
+        [
+          "frontend-plugin-entity-details",
+          "entity-details-frontend-plugin-activities-dev"
+        ],
+        [
+          "frontend-plugin-entity-details",
+          "entity-details-frontend-plugin-auth"
+        ],
+        [
+          "frontend-plugin-entity-details",
+          "entity-details-frontend-plugin-choose-template"
+        ],
+        [
+          "frontend-plugin-entity-details",
+          "entity-details-frontend-plugin-document-summary-dev"
+        ],
+        [
+          "frontend-plugin-entity-details",
+          "entity-details-frontend-plugin-entity-header-dev"
+        ],
+        [
+          "frontend-plugin-entity-details",
+          "entity-details-frontend-plugin-entity-inline"
+        ],
+        [
+          "frontend-plugin-entity-details",
+          "entity-details-frontend-plugin-gridster-dev"
+        ],
+        [
+          "frontend-plugin-entity-details",
+          "entity-details-frontend-plugin-notes-dev"
+        ],
+        [
+          "frontend-plugin-entity-details",
+          "entity-details-frontend-plugin-task-summary-dev"
+        ],
+        [
+          "frontend-plugin-entity-details",
+          "entity-details-frontend-plugin-tasks-dev"
+        ],
+        ["frontend-plugin-task-summary", "task-summary-frontend-plugin-auth"],
+        [
+          "frontend-plugin-task-summary",
+          "task-summary-frontend-plugin-composables"
+        ],
+        [
+          "frontend-plugin-task-summary",
+          "task-summary-frontend-plugin-crud-basic"
+        ],
+        [
+          "frontend-plugin-task-summary",
+          "task-summary-frontend-plugin-media-preview"
+        ],
+        ["frontend-plugin-tasks", "tasks-frontend-plugin-auth"],
+        ["frontend-plugin-tasks", "tasks-frontend-plugin-composables"],
+        ["frontend-plugin-tasks", "tasks-frontend-plugin-crud-basic"],
+        ["frontend-plugin-tasks", "tasks-frontend-plugin-file-upload"],
+        ["frontend-plugin-tasks", "tasks-frontend-plugin-form"],
+        ["frontend-plugin-tasks", "tasks-frontend-plugin-kanban-dev"],
+        ["frontend-plugin-tasks", "tasks-frontend-plugin-media-preview"],
+        ["frontend-plugin-tasks", "tasks-frontend-plugin-quill"],
+        [
+          "frontend-plugin-document-summary",
+          "document-summary-frontend-plugin-auth"
+        ],
+        [
+          "frontend-plugin-document-summary",
+          "document-summary-frontend-plugin-composables"
+        ],
+        [
+          "frontend-plugin-document-summary",
+          "document-summary-frontend-plugin-crud-basic"
+        ],
+        [
+          "frontend-plugin-document-summary",
+          "document-summary-frontend-plugin-email-component"
+        ],
+        [
+          "frontend-plugin-document-summary",
+          "document-summary-frontend-plugin-file-upload"
+        ],
+        [
+          "frontend-plugin-document-summary",
+          "document-summary-frontend-plugin-form-dev"
+        ],
+        [
+          "frontend-plugin-document-summary",
+          "document-summary-frontend-plugin-media-preview"
+        ],
+        [
+          "frontend-plugin-document-summary",
+          "document-summary-frontend-plugin-modal"
+        ]
       ]
+    }
+  ]
 }
