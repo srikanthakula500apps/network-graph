@@ -1,3 +1,9 @@
-export default defineNuxtconfig( {
-  modules: ["nuxt-highharts", "vuetify-nuxt-module"],
+export default defineNuxtConfig({
+
+ modules: [
+
+  'vuetify-nuxt-module', 'nuxt-highcharts'
+
+ ],
+
 })
