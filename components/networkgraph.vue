@@ -2,30 +2,37 @@
   <div class="container">
     <!-- Select Dropdown -->
     <v-select
-      v-model="selectedFromValue"
       clearable
-      label="Select"
+      label="Select Plugin"
+      v-model="selectedFromValue"
       :items="uniqueFromValues"
-      variant="outlined"
-    ></v-select>
+      variant="outlined"></v-select>
+
+    <!-- Loader -->
+    <div v-if="isLoading" class="loader"></div>
+
+    <!-- Highcharts Network Graph -->
     <div
+      v-show="!isLoading"
       @wheel.prevent="handleMouseWheel"
       @mousedown.prevent="startPan"
       @mousemove="pan"
-      @mouseup="stopPan"
-    >
+      @mouseup="stopPan">
       <highchart
         :style="{ transform: `scale(${zoom}) translate(${panX}px, ${panY}px)` }"
         :options="chartOptions"
-        :modules="[chartData.chart.type]"
-      ></highchart>
+        :modules="[chartData.chart.type]"></highchart>
     </div>
   </div>
 </template>
 
 <script setup>
-import { ref, computed } from "vue";
+import { ref, computed, onMounted } from "vue";
 const props = defineProps(["chartData"]);
+const isLoading = ref(true);
+  setTimeout(() => {
+    isLoading.value = false;
+  }, 2000); // Adjust the delay time as needed
 const zoom = ref(1);
 const isPanning = ref(false);
 const panStartX = ref(0);
@@ -45,18 +52,18 @@ const uniqueFromValues = computed(() => {
 });
 
 // Filter the data based on the selected 'from' value
-const filteredChartOptions = computed(() => {
+const filteredData = computed(() => {
   if (!selectedFromValue.value) {
     return props.chartData.series[0].data;
   } else {
     // Filter data based on the selected 'from' value
     const filteredSeries = props.chartData.series[0].data.filter(
       (item) => item[0].replace("frontend-plugin-", "") === selectedFromValue.value
-);
+    );
     return filteredSeries;
   }
-  
 });
+
 const filteredNodes = computed(() => {
   if (!selectedFromValue.value) {
     return props.chartData.series[0].nodes;
@@ -72,6 +79,7 @@ const filteredHeight = computed(() => {
     return "30%";
   }
 });
+
 const filteredLength = computed(() => {
   if (!selectedFromValue.value) {
     return props.chartData.linkLength;
@@ -102,10 +110,8 @@ const chartOptions = ref({
             width = chart.plotWidth,
             height = chart.plotHeight;
           this.nodes.forEach(function (node) {
-            // If initial positions were set previously, use that
-
-            // positions. Otherwise use random position:
-
+            /* If initial positions were set previously, use that
+             positions. Otherwise use random position:*/
             node.plotX =
               node.plotX === undefined ? Math.random() * width : node.plotX;
             node.plotY =
@@ -114,7 +120,7 @@ const chartOptions = ref({
         },
       },
     },
-  },
+  },  
 
   series: props.chartData.series,
   series: [
@@ -128,7 +134,7 @@ const chartOptions = ref({
         },
       },
       nodes: filteredNodes,
-      data: filteredChartOptions,
+      data: filteredData,
     },
   ],
 });
@@ -160,8 +166,25 @@ const stopPan = () => {
   isPanning.value = false;
 };
 </script>
+
 <style scoped>
 .container {
   margin-top: 10px;
+}
+
+.loader {
+  /* Add your loader styles, e.g., spinner or other loading animation */
+  border: 4px solid #f3f3f3;
+  border-top: 4px solid #02243b;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+  margin: 20px auto;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }
 </style>
